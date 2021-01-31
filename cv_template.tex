@@ -1,0 +1,85 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc} 
+\usepackage[russian]{babel}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Павел}{Копытов}
+\title{Product Manager}                               % optional, remove / comment the line if not wanted
+% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+
+
+\email{pavkopytov@gmail.com}                               % optional, remove / comment the line if not wanted                        % optional, remove / comment the line if not wanted                        % optional, remove / comment the line if not wanted                             % optional, remove / comment the line if not wanted
+\social[github]{anzurna}                              % optional, remove / comment the line if not wanted
+                % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{IMG_9429}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file                                % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Образование}
+\cventry{2017--2021}{Бакалавриат. Информатика и вычислительная техника}{ПетрГУ}{Петрозаводск}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Опыт работы}
+\cventry{сентябрь 2020--настоящее время}{Преподаватель программирования}{JunySchool}{удаленно}{}{Обучение детей от 11 лет программированию на Python.\newline{}%
+}
+\cventry{2019--настоящее время}{Оценщик контента}{Lionbridge}{удаленно}{}{Оценка релевантности поисковой выдачи Google; оценка и возрастное ранжирование видео на Youtube.}
+
+\section{Владение языками}
+\cvitemwithcomment{Русский}{Родной}{}
+\cvitemwithcomment{Английский}{Свободное владение}{}
+
+
+\section{Навыки}
+\cvdoubleitem{Языки программирования}{Python, C++, C, Bash}{Linux}{SSH, SFTP, QEMU, X Server, grep, gcc, git и др.}
+\cvdoubleitem{ML}{Mask R-CNN, OpenCV,\newlineдеревья решений,  NLP}{Прочее}{Геймдизайн,\newlineуправление проектами}
+\cvdoubleitem{Сеть}{HTTP, TCP/IP, DNS, Ethernet, OSI/RM}{}{}
+
+\section{Увлечения}
+\cvitem{}{Бег}
+\cvitem{}{Программирование игр и геймдизайн}
+\cvitem{}{Йога}
+\section{Проекты}
+\cvitem{Алгоритм A*}{github.com/Anzurna/algo}
+\cvitem{Mask RCNN}{github.com/Anzurna/lr\_mask\_rcnn}
+
+\end{document}
+
+
+%% end of file `template.tex'.
